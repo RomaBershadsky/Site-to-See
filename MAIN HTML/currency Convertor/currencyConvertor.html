@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Currency Converter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="currencyConvertor.css">
+    <!-- <link rel="stylesheet" href="../main.css"> -->
+</head>
+
+<body>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a onclick="goBack()">
+                    <div class="btnicon"><i class="fas fa-arrow-left fa-3x"></i></div>
+                </a></li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="container">
+        <br><br>
+        <h1 style="text-align: center;">Currency Converter</h1>
+        <form id="myForm">
+            <br><br>
+            <label for="Base Currency">Base Currency</label>
+            <select class="form-control" id="base">
+                <option>USD</option>
+                <option>HKD</option>
+                <option>ISK</option>
+                <option>PHP</option>
+                <option>DKK</option>
+                <option>HUF</option>
+                <option>CZK</option>
+                <option>GBP</option>
+                <option>RON</option>
+                <option>SEK</option>
+                <option>IDR</option>
+                <option>INR</option>
+                <option>BRL</option>
+                <option>RUB</option>
+                <option>HRK</option>
+                <option>JPY</option>
+                <option>THB</option>
+                <option>CHF</option>
+                <option>EUR</option>
+                <option>MYR</option>
+                <option>BGN</option>
+                <option>TRY</option>
+                <option>CNY</option>
+                <option>NOK</option>
+                <option>NZD</option>
+                <option>ZAR</option>
+                <option>CAD</option>
+                <option>MXN</option>
+                <option>SGD</option>
+                <option>AUD</option>
+                <option>ILS</option>
+                <option>KRW</option>
+                <option>PLN</option>
+            </select>
+            <br>
+            <div class="form-group">
+                <input type="number" class="form-control" id="baseNumber" value="1">
+            </div>
+            <label for="Target Currency">Target Currency</label>
+            <select class="form-control" id="target">
+                <option>EUR</option>
+                <option>INR</option>
+                <option>HKD</option>
+                <option>ISK</option>
+                <option>PHP</option>
+                <option>DKK</option>
+                <option>HUF</option>
+                <option>CZK</option>
+                <option>GBP</option>
+                <option>RON</option>
+                <option>SEK</option>
+                <option>IDR</option>
+                <option>CAD</option>
+                <option>BRL</option>
+                <option>RUB</option>
+                <option>HRK</option>
+                <option>JPY</option>
+                <option>THB</option>
+                <option>CHF</option>
+                <option>MYR</option>
+                <option>BGN</option>
+                <option>TRY</option>
+                <option>CNY</option>
+                <option>NOK</option>
+                <option>NZD</option>
+                <option>ZAR</option>
+                <option>USD</option>
+                <option>MXN</option>
+                <option>SGD</option>
+                <option>AUD</option>
+                <option>ILS</option>
+                <option>KRW</option>
+                <option>PLN</option>
+            </select>
+            <br>
+            <div class="form-group">
+                <input type="number" class="form-control" id="targetNumber">
+            </div>
+        </form>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="currencyConvertor.js"></script>
+
+</html>

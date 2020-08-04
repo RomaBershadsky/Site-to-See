@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+        integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="../main.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="../index.html">
+                    <div class="btnicon"><i class="fas fa-home fa-3x"></i></div>
+                </a></li>
+            <li><a onclick="goBack()">
+                    <div class="btnicon"><i class="fas fa-arrow-left fa-3x"></i></div>
+                </a></li>
+        </ul>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="aboutcontainer">
+        <h1>Coming Soon</h1>
+
+        <div class="count">
+            <div class="countdays">
+                <span id="days">00</span>
+                DAYS LEFT
+            </div>
+
+
+            <div class="countdays">
+                <span id="hours">00</span>
+                HOURS
+            </div>
+
+
+            <div class="countdays">
+                <span id="minutes">00</span>
+                MINUTES
+            </div>
+
+
+            <div class="countdays">
+                <span id="seconds">00</span>
+                SECONDS
+            </div>
+        </div>
+
+        <script src="about.js"></script>
+        <script src="../main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(230, 230, 178);
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  font-family: sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  /* touch-action: none; */ /* disable Pinch and Zoom  */
+}
+
+form label {
+  font-weight: bold;
+}
+
+.container {
+  width: 800px;
+  margin: 100px auto;
+  /* user-select: none; */
+  /* position: relative; */
+}
+
+nav {
+  background-color: #5d4954;
+  display: flex;
+}
+
+.nav-links i {
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 667px) {
+  .container {
+    width: 100%;
+    margin: 50px auto;
+  }
+}
